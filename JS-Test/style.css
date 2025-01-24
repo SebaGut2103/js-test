@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(157, 174, 189);
+}
+header{
+    padding: 10px;
+    background-color: rgb(181, 143, 216);
+    display:flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+}
+#btn-sesion{
+    width: 8vw;
+    border-radius: 20px;
+    height: 3.5vh;
+    background-color: rgb(231, 120, 120);
+    color: white;
+}
+#btn-register{
+    width: 8vw;
+    border-radius: 20px;
+    height: 3.5vh;
+    background-color: rgb(231, 120, 120);
+    color: white;
+}
+#add{
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#add-work{
+    text-align: center;
+    font-size: 1em;
+    border-radius: 30px;
+    width: 15vw;
+    border: solid 2px rgb(22, 143, 213);
+    background-color: rgb(215, 246, 250);
+}
+h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5em;
+}
+.head-table{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+}
+#pendiente{
+    border:  solid black 1px;
+    text-align: center;
+    background-color: beige;
+    width: 25vw;
+}
+#progreso{
+    border:  solid black 1px;
+    background-color: cornflowerblue;
+    text-align: center;
+    width: 25vw;
+}
+#Completado{
+    width: 25vw;
+    border: solid 1px black;
+    text-align: center;
+    background-color: rgb(184, 106, 75);
+}
+#button{
+    width: 8.5vw;
+    border-radius: 20px;
+    background-color: rgb(231, 120, 120);
+    color: white;
+}
+#body{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+}
+.body-1{
+    background-color: beige;
+    border: solid 1px black;
+    width: 25vw;
+    height: full;
+}
+.body-2{
+    background-color: cornflowerblue;
+    border: solid 1px black;
+    width: 25vw;
+    height: full;
+}
+.body-3{
+    background-color:  rgb(184, 106, 75);
+    border: solid 1px black;
+    width: 25vw;
+    height: full;
+}

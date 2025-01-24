@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="modal-style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+</head>
+
+<body>
+    <header>
+        <h1>Momentum</h1>
+        <div>
+            <input type="button" id="btn-register" value="Registrar">
+            <input type="button" id="btn-sesion" value="Iniciar-Sesión">
+            <div id="modal">
+                <div id="modal-login">
+                    <li>Usuario</li>
+                    <input type="text">
+                    <li>
+                        Contraseña
+                    </li>
+                    <input type="password">
+                    <span id="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <section id="add">
+            <div id="button-text">
+            <input type="text" placeholder="Agrega una Tarea" name="add" id="add-work">
+            <input type="button" id="button" value="Agregar">
+        </div>
+
+    </section>
+        <section class="head-table">
+            <div id="pendiente">
+                <h2>
+                    Pendientes
+                </h2>
+            </div>
+            <div id="progreso">
+                <h2>progreso</h2>
+            </div>
+            <div id="Completado">
+                <h2>Completado</h2>
+            </div>
+        </section>
+        <section id="body">
+            <div class="body-1">
+                <ul id="list"></ul>
+            </div>
+            <div class="body-2"></div>
+            <div class="body-3"></div>
+        </section>
+</body>
+<script src="index.js"></script>
+
+</html>
