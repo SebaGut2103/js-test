@@ -99,3 +99,57 @@ h1{
     width: 25vw;
     height: full;
 }
+li{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: solid rgb(184, 106, 75);
+    background-color: rgb(223, 216, 180);
+    font-family: 'Courier New', Courier, monospace;
+}
+li button{
+    background-color: rgb(215, 246, 250);
+    border-radius: 20px;
+}
+
+ @media (max-width: 768px){
+    header{
+        gap: 25px;
+    }
+    h1{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5em;
+    }
+    #btn-sesion{
+        width: 75%;
+        border-radius: 20px;
+        height: 15%;
+        background-color: rgb(231, 120, 120);
+        color: white;
+    }
+    #btn-register{
+        width: 75%;
+        border-radius: 20px;
+        height: 15%;
+        background-color: rgb(231, 120, 120);
+        color: white;
+    }
+    h2{
+        font-size: 0.7em;
+    }
+    #add-work{
+        width: 65%;
+    }
+    #button{
+        width: 25vw;
+    }
+    li{
+        gap: 20px;
+    }
+ }

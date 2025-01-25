@@ -1,9 +1,16 @@
 {
   "Tareas": [
     {
-      "id": 0,
-      "title": "json-server",
-      "author": "typicode"
+      "id": 1,
+      "tarea": "json-server"
+    }
+  ],
+  "Usuarios":[
+    {
+      "id":1,
+      "nombre":"",
+      "correo":"",
+      "contras":""
     }
   ]
 }

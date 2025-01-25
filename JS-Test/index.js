@@ -2,6 +2,32 @@ const add = document.getElementById("button");
 const input = document.getElementById("add-work");
 const list = document.getElementById("list");
 
+const agregar = document.getElementById("agregado")
+
+agregar.addEventListener("submit", async (evento) => {
+    evento.preventDefault();
+
+     const tarea = document.getElementById("add-workd")
+
+    try {
+        const url = 'http://localhost:3000/Tareas';
+        const response = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({tarea}),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            console.log("h")
+        }
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+
 loadTasks();
 
 input.addEventListener("keypress", function (event) {
@@ -29,17 +55,21 @@ add.addEventListener("click", addTask);
 function createTaskElement(task) {
     const listItem = document.createElement("li");
     const deleteButton = document.createElement("button");
+    const doneButton2 = document.createElement("button");
     const doneButton = document.createElement("button");
     const buttonContainer = document.createElement("div");
 
     listItem.textContent = task;
 
     function showButtons() {
-        doneButton.textContent = String.fromCodePoint(0x2714);
+        doneButton.textContent = String.fromCodePoint(0x2190);
         doneButton.id = "done";
+        doneButton2.textContent = String.fromCodePoint(0x2192);
+        doneButton2.id = "done";
         deleteButton.textContent = String.fromCodePoint(0x2716);
         deleteButton.id = "delete";
         buttonContainer.appendChild(doneButton);
+        buttonContainer.appendChild(doneButton2)
         buttonContainer.appendChild(deleteButton);
         listItem.appendChild(buttonContainer);
     }
@@ -62,6 +92,11 @@ function createTaskElement(task) {
 
 }
 
+function moveTaskElement(){
+    
+}
+
+
 async function saveTasks() {
     let tasks = [];
 
@@ -80,18 +115,3 @@ function loadTasks() {
     tasks.forEach(createTaskElement);
 }
 
-const saveWork  = async ()=>{
-    try{
-        const response = await fetch("http://localhost:3000/Tareas",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body:JSON.stringify({
-                title:input
-            })
-        });
-        input =  await response.json(input)
-            
-    }
-}
